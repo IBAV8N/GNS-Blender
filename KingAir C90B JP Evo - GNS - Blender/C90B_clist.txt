@@ -1,0 +1,501 @@
+sw_checklist:C90B SPECIFICATIONS
+sw_itemvoid: Engine|2 x Pratt & Whitney PT6A-21
+sw_itemvoid: Power |550-shaft horsepower per engine
+sw_itemvoid: Propeller|Constant Speed
+sw_itemvoid: Fuel Capacity|384 Gallons / 2,573 Lbs.
+sw_itemvoid: Recommended fuel|JP-4; JP-5; Jet A; Jet A-1; Jet B
+sw_itemvoid: Fuel Burn (average)|617 Lb. / 280 Kg. per hour
+sw_itemvoid:
+sw_itemvoid: Weights and Capacities:
+sw_itemvoid: Max. Takeoff Weight|9,650 Lb. / 4,377 Kg.
+sw_itemvoid: Max. Landing Weight|9,168 Lb. / 4,159 Kg.
+sw_itemvoid: Standard Empty Weight|5,765 Lb. / 2,615 Kg.
+sw_itemvoid: Max. Useful Load|3,885 Lb. / 1,762 Kg.
+sw_itemvoid: Baggage Capacity|350 Lb. / 159 Kg.
+sw_itemvoid:
+sw_itemvoid: Performance:
+sw_itemvoid: Max. Operating Speed|208 KIAS
+sw_itemvoid: Stall Speed (Clean)|89 KIAS
+sw_itemvoid: Stall Speed (Landing Configuration)|76 KIAS
+sw_itemvoid: Best Climb Rate|1,955 Feet Per Minute @ 9,650 Lb.
+sw_itemvoid: Wing Loading|32.8 Lb. / Sq. Ft.
+sw_itemvoid: Power Loading|8.8 Lb. / Hp.
+sw_itemvoid: Service Ceiling|28,100 Ft. @ 9,650 Lb.
+sw_itemvoid:
+sw_item: Continue
+sw_continue
+
+
+sw_checklist:REFERENCE AIRSPEEDS @ 10,100lb/4581Kg
+sw_itemvoid: Maximum Demonstrated Crosswind Speed|25 KIAS
+sw_itemvoid: Rotation|97 KIAS
+sw_itemvoid: Rotation 50ft Obstacle|104 KIAS
+sw_itemvoid:
+sw_itemvoid: Two Engine Best Angle of Climb Speed (Vx)|101 KIAS
+sw_itemvoid: Two Engine Best Rate of Climb Speed (Vy)|118 KIAS
+sw_itemvoid: Minimum Single Engine Control|92 KIAS
+sw_itemvoid: Maneuvering Speed|169 KIAS
+sw_itemvoid:
+sw_itemvoid: Turbulent Air Penetration Speed|161 KIAS
+sw_itemvoid: Maximum Airspeed for Effective Windshield Anti-icing|226 KIAS
+sw_itemvoid:
+sw_itemvoid: Maximum Flap Extended Speed:
+sw_itemvoid:    15°|184 KIAS
+sw_itemvoid:    43°|148 KIAS
+sw_itemvoid: Maximum Landing Gear Extension Speed|182 KIAS
+sw_itemvoid: Maximum Landing Gear Extended Speed|182 KIAS
+sw_itemvoid: Maximum Landing Gear Retraction Speed|163 KIAS
+sw_itemvoid:
+sw_itemvoid: Landing Final Approach (Flaps Down) at 9600lb/4354Kg|101 KIAS
+sw_itemvoid: Balked Landing Climb Speed|101 KIAS
+sw_itemvoid: Minimum Control Speed (Vmca)|80 KIAS
+sw_itemvoid: Maximum Glide|125 KIAS
+sw_itemvoid: Intentional One-Engine-Inoperative Speed (Vsse)|97 KIAS
+sw_itemvoid:
+sw_item: Continue
+sw_continue
+
+
+sw_checklist:INITIAL COCKPIT CHECK
+sw_itemvoid: Good Day, Captain
+sw_item: Weight, Fuel & CG|CHECKED, SET:sim/flightmodel/weight/m_total:><1
+sw_item: Parking Brake|SET:sim/flightmodel/controls/parkbrake:>0
+sw_item: Landing Gear Control|DOWN:sim/cockpit2/controls/gear_handle_down:1
+sw_item: EFIS Auxiliary Power|TEST:laminar/c90/avionics/EFIS/switch_pos/aux_pwr_on:-1
+sw_item: EFIS Auxiliary Power|OFF:laminar/c90/avionics/EFIS/switch_pos/aux_pwr_on:0
+sw_item: Battery Switch|OFF:sim/cockpit/electrical/battery_on:0
+sw_item: Avionics Master Switch|OFF:laminar/c90/avionics/switch/avionics_switch_pos:0
+sw_item: Left Subpanel Switches|OFF:(laminar/c90/electrical/switch/inverter_pos:0)&&(laminar/c90/electrical/switch/autoignition_pos_L:0)&&(laminar/c90/electrical/switch/autoignition_pos_R:0)&&(sim/cockpit/electrical/battery_on:0)&&(laminar/c90/electrical/switch/gen1_switch_pos:-1)&&(laminar/c90/electrical/switch/gen2_switch_pos:-1)&&(laminar/c90/electrical/switch/bus_sense_switch_pos:0)&&(laminar/c90/iceRain/switch/engine_actmotor_pos_L:0)&&(laminar/c90/iceRain/switch/engine_actmotor_pos_R:0)&&(laminar/c90/powerplant/switch/ign_start_pos_L:0)&&(laminar/c90/powerplant/switch/ign_start_pos_R:0)&&(sim/cockpit/switches/auto_feather_mode:0)&&(laminar/c90/powerplant/switch/prop_gov_pos:0)&&(sim/cockpit2/switches/landing_lights_switch[0]:0)&&(sim/cockpit2/switches/landing_lights_switch[1]:0)&&(sim/cockpit2/switches/taxi_light_on:0)&&(sim/cockpit2/switches/generic_lights_switch[1]:0)&&(sim/cockpit2/switches/navigation_lights_on:0)&&(sim/cockpit2/switches/generic_lights_switch[2]:0)&&(sim/cockpit2/switches/beacon_on:0)&&(sim/cockpit2/switches/strobe_lights_on:0)&&(laminar/c90/iceRain/switch/windshield_antiice_pos_L:0)&&(laminar/c90/iceRain/switch/windshield_antiice_pos_R:0)&&(laminar/c90/iceRain/switch/prop_deice_pos:0)&&(laminar/c90/iceRain/switch/fuelvent_deice_pos_L:0)&&(laminar/c90/iceRain/switch/fuelvent_deice_pos_R:0)&&(sim/cockpit2/switches/generic_lights_switch[3]:0)&&(laminar/c90/iceRain/switch/surface_deice_pos:0)&&(sim/cockpit/switches/anti_ice_AOA_heat:0)&&(sim/cockpit/switches/pitot_heat_on:0)&&(sim/cockpit/switches/pitot_heat_on2:0)
+sw_item: Elevator Trim|ZERO:(sim/cockpit2/controls/elevator_trim:>-0.012)&&(sim/cockpit2/controls/elevator_trim:<0.012)
+sw_item: Power Levers|IDLE:sim/cockpit2/engine/actuators/throttle_ratio_all:<0.05
+sw_item: Propeller Levers|FULL FORWARD:sim/cockpit2/engine/actuators/prop_rotation_speed_rad_sec_all:>225
+sw_item: Condition Levers|CUT-OFF:sim/cockpit2/engine/actuators/mixture_ratio_all:0
+sw_item: Vent Blower|AUTO:laminar/c90/airCon/dial/cabin_temp_mode_pos:0
+sw_item: Cabin Temp Mode|OFF:laminar/c90/airCon/dial/cabin_temp_mode_pos:0
+sw_item: EFIS Power|OFF:laminar/c90/avionics/switch_pos/EFIS_power:0
+sw_item: Cabin Pressure|PRESS:laminar/c90/pressure/switch_pos/control:0
+sw_item: Voltmeter BAT|> 23V:(laminar/c90/electrical/switch/switchVoltBusSelect:5)&&(laminar/c90/electrical/gauge/voltage_gauge:>23)
+sw_item: External Power|AS REQ:((sim/cockpit2/electrical/battery_voltage_actual_volts[0]:>23)&&(sim/cockpit/electrical/gpu_on:0))||((sim/cockpit2/electrical/battery_voltage_actual_volts[0]:<23)&&(sim/cockpit/electrical/gpu_on:1))
+sw_item: Cabin Door|LOCKED:sim/flightmodel2/misc/door_open_ratio[0]:0
+sw_continue
+
+
+sw_checklist:BEFORE ENGINE START
+sw_item: Battery Switch|ON:sim/cockpit/electrical/battery_on:1
+sw_item: Overhead Panel|MASTER ON, SET:laminar/c90/lighting/switch/ovh_master:1
+sw_item: Pilot Microphone Switch|NORMAL:laminar/c90/avionics/switch/mic_sel_pos_pilot:0
+sw_item: L&R Engine Anti-Ice|ON:(sim/cockpit/switches/anti_ice_engine_air[0]:1)&&(sim/cockpit/switches/anti_ice_engine_air[1]:1)
+sw_item: Fuel Quantity|NACELLE AND TOTAL:sim/cockpit2/fuel/showing_aux:1:0
+sw_item: Firewall Valves|CLOSED (DOWN):(sim/cockpit2/fuel/firewall_closed_left:1)&&(sim/cockpit2/fuel/firewall_closed_right:1)
+sw_item: Annun. L FUEL PRESS, R FUEL PRESS|LIT:(laminar/c90/lighting/annun/fuel_press_L:>0)&&(laminar/c90/lighting/annun/fuel_press_R:>0)
+sw_item: Fuel Crossfeed|OPEN:sim/cockpit2/fuel/auto_crossfeed:2
+sw_item: Annun. FUEL CROSSFEED|LIT:laminar/c90/lighting/annun/fuel_crossfeed:>0
+sw_item: Fuel Crossfeed|OFF:sim/cockpit2/fuel/auto_crossfeed:0
+sw_item: Boost Pumps|ON:(sim/cockpit/engine/fuel_pump_on[0]:1)&&(sim/cockpit/engine/fuel_pump_on[1]:1)
+sw_item: Noise from Boost Pumps|CHECK:(sim/cockpit/engine/fuel_pump_on[0]:1)&&(sim/cockpit/engine/fuel_pump_on[1]:1)&&(sim/flightmodel2/engines/fuel_pump_spinning[0]:1)&&(sim/flightmodel2/engines/fuel_pump_spinning[1]:1)
+sw_item: Firewall Valves|OPEN (COVERS CLOSED):(sim/cockpit2/fuel/firewall_closed_left:0)&&(sim/cockpit2/fuel/firewall_closed_right:0)
+sw_item: Annun. L FUEL PRESS, R FUEL PRESS|EXT.:(laminar/c90/lighting/annun/fuel_press_L:0)&&(laminar/c90/lighting/annun/fuel_press_R:0)
+sw_item: Transfer Pumps|AUTO:(sim/cockpit2/fuel/transfer_pump_left:1)&&(sim/cockpit2/fuel/transfer_pump_right:1)
+sw_item: Left Transfer|TEST:sim/cockpit2/fuel/transfer_test:-1
+sw_item: Annun. L NO FUEL XFER|LIT:(laminar/c90/lighting/annun/no_fuel_xfr_L:>0)||(sim/cockpit2/fuel/transfer_test:-1)
+sw_item: Right Transfer|TEST:sim/cockpit2/fuel/transfer_test:1
+sw_item: Annun. R NO FUEL XFER|LIT:(laminar/c90/lighting/annun/no_fuel_xfr_R:>0)||(sim/cockpit2/fuel/transfer_test:1)
+sw_item: Transfer Pumps|OFF:(sim/cockpit2/fuel/transfer_pump_left:0)&&(sim/cockpit2/fuel/transfer_pump_right:0)
+sw_item: Voltmeter TPL FED|> 22V:(laminar/c90/electrical/switch/switchVoltBusSelect:4)&&(laminar/c90/electrical/gauge/voltage_gauge:>22)
+sw_item: Voltmeter R GEN|  0V:(laminar/c90/electrical/switch/switchVoltBusSelect:3)&&(laminar/c90/electrical/gauge/voltage_gauge:<0.5)
+sw_item: Voltmeter L GEN|  0V:(laminar/c90/electrical/switch/switchVoltBusSelect:2)&&(laminar/c90/electrical/gauge/voltage_gauge:<0.5)
+sw_item: Voltmeter CTR|> 23V:(laminar/c90/electrical/switch/switchVoltBusSelect:1)&&(laminar/c90/electrical/gauge/voltage_gauge:>23)
+sw_item: Annunciator Lights|PRESS TO TEST:(laminar/c90/electrical/switch/annun_test_on:1)
+sw_item: Gear Down Annunciators|CHECK:sim/cockpit2/annunciators/gear_unsafe:0
+sw_item: Beacon|ON:sim/cockpit2/switches/beacon_on:1
+sw_continue
+
+
+sw_checklist:RIGHT ENGINE START
+sw_item: Right Ignition and Engine Start Switch|ON:laminar/c90/powerplant/switch/ign_start_pos_R:1
+sw_item: Annun. R IGNITION ON|LIT:laminar/c90/lighting/annun/ignition_on_R:>0.9
+sw_item: N1 Above 12%|CHECK:sim/cockpit2/engine/indicators/N1_percent[1]:>12
+sw_item: Right Condition Lever|LOW IDLE:sim/flightmodel/engine/ENGN_mixt[1]:>0.47
+sw_itemvoid: Monitor ITT
+sw_itemvoid: Fuel Cutoff if above 1090°C
+sw_item: N1 Above 51%|CHECK:sim/flightmodel2/engines/N1_percent[1]:>51
+sw_item: Right Ignition and Engine Start Switch|OFF:laminar/c90/powerplant/switch/ign_start_pos_R:0
+sw_item: Right Condition Lever|HIGH IDLE:sim/flightmodel/engine/ENGN_mixt[1]:>0.9
+sw_item: Right Engine Oil Pressure|CHECK:(sim/cockpit2/engine/indicators/oil_pressure_psi[1]:70|100)&&(laminar/c90/lighting/annun/oil_press_R:0)
+sw_item: Right Engine Turbine RPM|> 59%:sim/cockpit2/engine/indicators/N1_percent[1]:>59
+sw_item: Right Generator|RESET (HOLD 1 SEC),ON:(laminar/c90/electrical/switch/gen2_switch_pos:1)&&(sim/cockpit2/electrical/generator_amps[1]:>0)
+sw_item: Annun. R DC GEN|EXT.:laminar/c90/lighting/annun/dc_gen_R:0
+sw_item: Annun. L GEN TIE OPEN|EXT.:laminar/c90/lighting/annun/gen_tie_open_L:0
+sw_item: Annun. R GEN TIE OPEN|EXT.:laminar/c90/lighting/annun/gen_tie_open_R:0
+sw_item: External Power|OFF:sim/cockpit/electrical/gpu_on:0
+sw_continue
+
+
+sw_checklist:LEFT ENGINE START
+sw_item: Left Ignition and Engine Start Switch|ON:laminar/c90/powerplant/switch/ign_start_pos_L:1
+sw_item: Annun. L IGNITION ON|LIT:laminar/c90/lighting/annun/ignition_on_L:>0
+sw_item: N1 Above 12%|CHECK:sim/flightmodel2/engines/N1_percent[0]:>12
+sw_item: Left Condition Lever|LOW IDLE:sim/flightmodel/engine/ENGN_mixt[0]:>0.47
+sw_itemvoid: Monitor ITT
+sw_itemvoid: Fuel Cutoff if above 1090°C
+sw_item: N1 Above 51%|CHECK:sim/flightmodel2/engines/N1_percent[0]:>51
+sw_item: Left Ignition and Engine Start Switch|OFF:laminar/c90/powerplant/switch/ign_start_pos_L:0
+sw_item: Right Condition Lever|LOW IDLE:sim/flightmodel/engine/ENGN_mixt[1]:<0.6
+sw_item: Left and Right Propeller RPM|> 1100:(sim/cockpit2/engine/indicators/prop_speed_rpm[0]:>1095)&&(sim/cockpit2/engine/indicators/prop_speed_rpm[1]:>1095)
+sw_item: Left Generator|RESET (HOLD 1 SEC),ON:(laminar/c90/electrical/switch/gen1_switch_pos:1)&&(sim/cockpit2/electrical/generator_amps[0]:>0)
+sw_item: Right Generator|RESET (HOLD 1 SEC),ON:(laminar/c90/electrical/switch/gen2_switch_pos:1)&&(sim/cockpit2/electrical/generator_amps[1]:>0)
+sw_item: Annun. L DC GEN|EXT.:laminar/c90/lighting/annun/dc_gen_L:0
+sw_continue
+
+
+sw_checklist:AFTER START
+sw_item: Transfer Pumps|AUTO:(sim/cockpit2/fuel/transfer_pump_left:1)&&(sim/cockpit2/fuel/transfer_pump_right:1)
+sw_item: Boost Pumps|ON:(sim/cockpit/engine/fuel_pump_on[0]:1)&&(sim/cockpit/engine/fuel_pump_on[1]:1)
+sw_item: Fuel Crossfeed|AUTO:sim/cockpit2/fuel/auto_crossfeed:1
+sw_item: Gen Ties|OPEN:laminar/c90/electrical/switch/cross_tie_switch_pos:-1
+sw_item: Annun. L GEN TIE OPEN & R GEN TIE OPEN|LIT:(laminar/c90/lighting/annun/gen_tie_open_L:>0)&&(laminar/c90/lighting/annun/gen_tie_open_R:>0)
+sw_item: Voltmeter CTR|> 23V:(laminar/c90/electrical/switch/switchVoltBusSelect:1)&&(laminar/c90/electrical/gauge/voltage_gauge:>23)
+sw_item: Voltmeter L GEN|27.5-29V:(laminar/c90/electrical/switch/switchVoltBusSelect:2)&&(laminar/c90/electrical/gauge/voltage_gauge:27.5|29)
+sw_item: Voltmeter R GEN|27.5-29V:(laminar/c90/electrical/switch/switchVoltBusSelect:3)&&(laminar/c90/electrical/gauge/voltage_gauge:27.5|29)
+sw_itemvoid: Within 1.0V of each other
+sw_item: Voltmeter TPL FED|26.5-28V:(laminar/c90/electrical/switch/switchVoltBusSelect:4)&&(laminar/c90/electrical/gauge/voltage_gauge:26.5|28.5)
+sw_item: Gen Ties|CLOSE:laminar/c90/lighting/annun/man_ties_close:>0
+sw_item: Annun. L & R GEN TIE OPEN|EXT.:(laminar/c90/lighting/annun/gen_tie_open_L:0)&&(laminar/c90/lighting/annun/gen_tie_open_R:0)
+sw_item: Bus Sense Switch |TEST:laminar/c90/electrical/switch/bus_sense_switch_pos:-1
+sw_item: Annun. BAT TIE OPEN|LIT:laminar/c90/lighting/annun/bat_tie_open:>0
+sw_item: Voltmeter CTR| 0.0V:(laminar/c90/electrical/switch/switchVoltBusSelect:1)&&(laminar/c90/electrical/gauge/voltage_gauge:<0.5)
+sw_item: Bus Sense Switch|RESET:laminar/c90/electrical/switch/bus_sense_switch_pos:1
+sw_item: Annun. BAT TIE OPEN|EXT.:laminar/c90/lighting/annun/bat_tie_open:0
+sw_item: Voltmeter CTR| 27.5-29V:(laminar/c90/electrical/switch/switchVoltBusSelect:1)&&(laminar/c90/electrical/gauge/voltage_gauge:27.5|29)
+sw_item: L & R Generator Loads|WITHIN 10%:sim/cockpit2/electrical/generator_amps[0]:({sim/cockpit2/electrical/generator_amps[1]}*0.9)|({sim/cockpit2/electrical/generator_amps[1]}*1.1)
+sw_item: Inverter|CHECK BOTH, SELECT 1:((laminar/c90/electrical/switch/inverter_pos:1:-1)&&(laminar/c90/lighting/annun/inverter:0))||((laminar/c90/electrical/switch/inverter_pos:-1:1)&&(laminar/c90/lighting/annun/inverter:0))
+sw_item: Avionics Master Switch|ON:laminar/c90/avionics/switch/avionics_switch_pos:1
+sw_item: EFIS Auxiliary Power|ON:laminar/c90/avionics/EFIS/switch_pos/aux_pwr_on:1
+sw_item: Taxi & Nav Lights|ON:(sim/cockpit/electrical/taxi_light_on:1)&&(sim/cockpit2/switches/navigation_lights_on:1)
+sw_item: Tail Flood Lights|AS REQ:((sim/cockpit2/switches/generic_lights_switch[3]:0)&&(((sim/graphics/scenery/sun_heading_degrees:<180)&&(sim/graphics/scenery/sun_pitch_degrees:>0.5))||((sim/graphics/scenery/sun_heading_degrees:>180)&&(sim/graphics/scenery/sun_pitch_degrees:>4))))||((sim/cockpit2/switches/generic_lights_switch[3]:1)&&(((sim/graphics/scenery/sun_heading_degrees:<180)&&(sim/graphics/scenery/sun_pitch_degrees:<0.5))||((sim/graphics/scenery/sun_heading_degrees:>180)&&(sim/graphics/scenery/sun_pitch_degrees:<4))))
+sw_item: Cabin Temperature Mode|AUTO:laminar/c90/airCon/dial/cabin_temp_mode_pos:1
+sw_item: No Smoking & FSB|ON:laminar/c90/lighting/switch/no_smoke_fsb_pos:1
+sw_item: Instrument Vacuum Pressure|CHECK:(sim/cockpit/misc/vacuum:2.8|6)&&(sim/cockpit/misc/vacuum2:2.8|6)
+sw_continue
+
+
+sw_checklist:AFTER START CON'T
+sw_item: EFIS Power Switch|ON:laminar/c90/avionics/switch_pos/EFIS_power:1
+sw_item: Rudder Boost|ON:laminar/c90/fltctrl/switch_pos/rudder_boost:1
+sw_item: Electric Trim|ON:laminar/c90/fltctrl/switch_pos/elev_trim_control:1
+sw_item: Elevator Trim Switches|TEST:sim/cockpit2/controls/elevator_trim:><0.01
+sw_item: Transponder|AS REQ:sim/cockpit/radios/transponder_mode:1
+sw_item: Engine Anti-Ice|VERIFY ON:(sim/cockpit/switches/anti_ice_engine_air[0]:1)&&(sim/cockpit/switches/anti_ice_engine_air[1]:1)
+sw_item: Flap Lever|FULL DOWN:sim/cockpit2/controls/flap_ratio:1
+sw_itemvoid:
+sw_itemvoid: Fuel Boost Pumps and Auto Crossfeed Check
+sw_item: Left Fuel Boost Pump|OFF:sim/cockpit/engine/fuel_pump_on[0]:0
+sw_item: Annun. L FUEL PRESS (BRIEFLY), FUEL CROSSFEED|LIT:laminar/c90/lighting/annun/fuel_crossfeed:>0
+sw_item: Left Fuel Boost Pump|ON:sim/cockpit/engine/fuel_pump_on[0]:1
+sw_item: Fuel Crossfeed|OFF:sim/cockpit2/fuel/auto_crossfeed:0
+sw_item: Fuel Crossfeed|AUTO:sim/cockpit2/fuel/auto_crossfeed:1
+sw_item: Annun. L FUEL PRESS, FUEL CROSSFEED|EXT.:(laminar/c90/lighting/annun/fuel_press_L:0)&&(laminar/c90/lighting/annun/fuel_crossfeed:0)
+sw_item: Right Fuel Boost Pump|OFF:sim/cockpit/engine/fuel_pump_on[1]:0
+sw_item: Annun. R FUEL PRESS(BRIEFLY), FUEL CROSSFEED|LIT:laminar/c90/lighting/annun/fuel_crossfeed:>0
+sw_item: Right Fuel Boost Pump|ON:sim/cockpit/engine/fuel_pump_on[1]:1
+sw_item: Fuel Crossfeed|OFF:sim/cockpit2/fuel/auto_crossfeed:0
+sw_item: Fuel Crossfeed|AUTO:sim/cockpit2/fuel/auto_crossfeed:1
+sw_item: Annun. R FUEL PRESS, FUEL CROSSFEED|EXT.:(laminar/c90/lighting/annun/fuel_press_R:0)&&(laminar/c90/lighting/annun/fuel_crossfeed:0)
+sw_itemvoid:
+sw_item: Flaps|CONFIRM DOWN:sim/cockpit2/controls/flap_handle_deploy_ratio:1
+sw_item: Flap Lever|UP:sim/cockpit2/controls/flap_ratio:0
+sw_continue
+
+
+sw_checklist:FIRST FLIGHT OF THE DAY 1
+sw_itemvoid: Pressurization Test
+sw_item: Bleed Air Valves|OPEN:(laminar/c90/pneumatics/switch/bleed_air_pos_L:1)&&(laminar/c90/pneumatics/switch/bleed_air_pos_R:1)
+sw_item: Cabin Altitude Selector Knob|-1000FT:sim/cockpit/pressure/cabin_altitude_set_m_msl:<-999
+sw_item: Condition Levers|HIGH IDLE:(sim/flightmodel/engine/ENGN_mixt[0]:>0.9)&&(sim/flightmodel/engine/ENGN_mixt[1]:>0.9)
+sw_item: Cabin Pressurization Switch|HOLD at TEST:laminar/c90/pressure/switch_pos/control:-1
+sw_item: Cabin Climb Indicator|CHECK for DESCENT:sim/cockpit/pressure/cabin_vvi_actual_m_msec:<-300
+sw_item: Cabin Pressurization Switch|RELEASE to PRESS:laminar/c90/pressure/switch_pos/control:0
+sw_itemvoid:
+sw_itemvoid: Overspeed Governor Test
+sw_item: Overspeed Prop Governor|TEST:laminar/c90/powerplant/switch/prop_gov_pos:1
+sw_itemvoid: Test one engine at a time
+sw_item: Right Power Lever|2000 RPM:sim/cockpit2/engine/indicators/prop_speed_rpm[1]:>1900
+sw_item: Power Lever|INC UNTIL RUDDER MVMNT:sim/flightmodel2/wing/rudder1_deg[0]:>9
+sw_item: Right Power Lever|IDLE:sim/cockpit2/engine/actuators/throttle_ratio_all:<0.1
+sw_itemvoid: Repeat for other Engine
+sw_item: Left Power Lever|2000 RPM:sim/cockpit2/engine/indicators/prop_speed_rpm[0]:>1900
+sw_item: Power Lever|INC UNTIL RUDDER MVMNT:sim/flightmodel2/wing/rudder1_deg[0]:<-9
+sw_item: Left Power Lever|IDLE:sim/cockpit2/engine/actuators/throttle_ratio_all:<0.01
+sw_item: Overspeed Prop Governor|OFF:laminar/c90/powerplant/switch/prop_gov_pos:0
+sw_itemvoid:
+sw_itemvoid: Primary Governors Test
+sw_item: Power Levers|> 1900RPM:(sim/cockpit2/engine/indicators/prop_speed_rpm[0]:>1900)&&(sim/cockpit2/engine/indicators/prop_speed_rpm[1]:>1900)
+sw_item: Propeller Levers|EXERCISE:(sim/flightmodel/engine/ENGN_prop[0]:<200)&&(sim/flightmodel/engine/ENGN_prop[1]:<200)
+sw_item: Annun. RVS NOT READY|LIT:laminar/c90/lighting/annun/rvs_not_ready:>0
+sw_item: Power Levers|Below 1900RPM:sim/cockpit2/engine/actuators/throttle_ratio_all:<0.1
+sw_item: Propeller Levers|EXERCISE:(sim/flightmodel/engine/ENGN_prop[0]:<200)&&(sim/flightmodel/engine/ENGN_prop[1]:<200)
+sw_item: Annun. RVS NOT READY|LIT:(laminar/c90/lighting/annun/rvs_not_ready:>0)&&(sim/flightmodel/engine/ENGN_prop[0]:<160)&&(sim/flightmodel/engine/ENGN_prop[1]:<160)
+sw_continue
+
+
+sw_checklist:FIRST FLIGHT OF THE DAY 2
+sw_itemvoid: Autofeather Test
+sw_item: Power Levers|500 FT-LB:(sim/flightmodel/engine/ENGN_TRQ[0]:>664)&&(sim/flightmodel/engine/ENGN_TRQ[1]:>664)
+sw_item: Autofeather Switch|HOLD to TEST:sim/cockpit2/switches/prop_feather_mode:2
+sw_item: Annun. L & R AUTOFEATHER|LIT:((laminar/c90/lighting/annun/autofeather_L:>0)&&(laminar/c90/lighting/annun/autofeather_R:>0))||(sim/cockpit2/switches/prop_feather_mode:2)
+sw_item: Power Levers|IDLE:sim/cockpit2/engine/actuators/throttle_ratio_all:<0.05
+sw_item: Annun. L & R AUTOFEATHER|EXT.:(laminar/c90/lighting/annun/autofeather_L:0)&&(laminar/c90/lighting/annun/autofeather_R:0)
+sw_item: Autofeather Switch|RELEASE:sim/cockpit/switches/auto_feather_mode:0
+sw_item: Left Propeller Manual Feather|CYCLE:sim/flightmodel/engine/ENGN_prop[0]:<130
+sw_item: Right Propeller Manual Feather|CYCLE:sim/flightmodel/engine/ENGN_prop[1]:<130
+sw_itemvoid:
+sw_itemvoid: Engine Ice Protection Test
+sw_item: Engine Anti-Ice Actuators|STANDBY:(laminar/c90/iceRain/switch/engine_actmotor_pos_L:1)&&(laminar/c90/iceRain/switch/engine_actmotor_pos_R:1)
+sw_item: Engine Anti-Ice|OFF:(sim/cockpit/switches/anti_ice_engine_air[0]:0)&&(sim/cockpit/switches/anti_ice_engine_air[1]:0)
+sw_item: Annun. L & R ENG ANTI-ICE|EXT.:(laminar/c90/lighting/annun/engine_antiice_L:0)&&(laminar/c90/lighting/annun/engine_antiice_R:0)
+sw_item: Engine Anti-Ice Actuators|MAIN:(laminar/c90/iceRain/switch/engine_actmotor_pos_L:0)&&(laminar/c90/iceRain/switch/engine_actmotor_pos_R:0)
+sw_item: Engine Anti-Ice|ON:(sim/cockpit/switches/anti_ice_engine_air[0]:1)&&(sim/cockpit/switches/anti_ice_engine_air[1]:1)
+sw_item: Annun. L & R ENG ANTI-ICE|LIT:(laminar/c90/lighting/annun/engine_antiice_L:>0)&&(laminar/c90/lighting/annun/engine_antiice_R:>0)
+sw_itemvoid:
+sw_itemvoid: Windshield Anti-Ice Test
+sw_item: Windshield Heats|HI:(laminar/c90/iceRain/switch/windshield_antiice_pos_L:-1)&&(laminar/c90/iceRain/switch/windshield_antiice_pos_R:-1)
+sw_item: Increase in Left and Right Load Meters|OBSERVED:sim/cockpit2/ice/ice_window_heat_on:1
+sw_item: Windshield Heats|OFF then NORMAL:(laminar/c90/iceRain/switch/windshield_antiice_pos_L:1)&&(laminar/c90/iceRain/switch/windshield_antiice_pos_R:1)
+sw_item: Increase in Left and Right Load Meters|OBSERVED:sim/cockpit2/ice/ice_window_heat_on:1
+sw_item: Windshield Heats|OFF:(laminar/c90/iceRain/switch/windshield_antiice_pos_L:0)&&(laminar/c90/iceRain/switch/windshield_antiice_pos_R:0)
+sw_continue
+
+
+sw_checklist:FIRST FLIGHT OF THE DAY 3
+sw_itemvoid: Propeller De-Ice Test
+sw_item: Right Condition Lever|HIGH IDLE:sim/flightmodel/engine/ENGN_mixt[1]:>0.9
+sw_item: Prop De-Ice|ON:laminar/c90/iceRain/switch/prop_deice_pos:1
+sw_item: Prop Amps|18-24A:laminar/c90/electrical/gauge/prop_amps_pos:18|24
+sw_itemvoid: Monitor for 90sec to ensure automatic timer operation
+sw_item: Prop Heat Cycling|CHECK:(sim/cockpit2/ice/ice_prop_heat_on_per_engine[0]:1:0)||(laminar/c90/iceRain/switch/prop_deice_pos:0)
+sw_item: Prop De-Ice|OFF:laminar/c90/iceRain/switch/prop_deice_pos:0
+sw_itemvoid:
+sw_itemvoid: Surface De-Ice System Test
+sw_item: Pneumatic Pressure|12-20PSI:laminar/c90/pneumatics/gauge/pressure_psi_needle_pos:12|20
+sw_item: Surface De-Ice Switch|SINGLE, PNEUM DECR.:laminar/c90/iceRain/switch/surface_deice_pos:1
+sw_item: Surface De-Ice Switch|RELEASE:laminar/c90/iceRain/switch/surface_deice_pos:0
+sw_item: Surface De-Ice Switch|MANUAL, PNEUM DECR.:laminar/c90/iceRain/switch/surface_deice_pos:-1
+sw_item: Surface De-Ice Switch|RELEASE:laminar/c90/iceRain/switch/surface_deice_pos:0
+sw_item: Condition Levers|LOW IDLE:(sim/flightmodel/engine/ENGN_mixt[0]:<0.6)&&(sim/flightmodel/engine/ENGN_mixt[1]:<0.6)
+sw_itemvoid:
+sw_itemvoid: Pitot Heat Anti-Ice Test
+sw_item: Pitot Heats|ON:(sim/cockpit/switches/pitot_heat_on:1)&&(sim/cockpit/switches/pitot_heat_on2:1)
+sw_item: Slight increase in load meter|OBSERVED:sim/cockpit2/electrical/generator_amps[0]:><2
+sw_item: Pitot Heats|OFF:(sim/cockpit/switches/pitot_heat_on:0)&&(sim/cockpit/switches/pitot_heat_on2:0)
+sw_continue
+
+
+sw_checklist:AVIONICS BRIEFING
+sw_item: Avionics Briefing|COMPLETE
+sw_itemvoid:
+sw_itemvoid: Autopilot:
+sw_item:    Course|ACT:laminar/c90/avionics/dial/crs_sensor_sel_pos:1
+sw_item:    Display|TEST:laminar/c90/autopilot/switch_pos/annun_test:1:0
+sw_item:    Flight Director|ON:laminar/c90/avionics/EFIS/switch_pos/fd:1
+sw_item:    ALT SELECT|ARM:laminar/c90/lighting/annun/fcp_alt_sel:>0
+sw_item:    CLB, IAS or VS|ARM:(laminar/c90/lighting/annun/fcp_clm:>0)||(laminar/c90/lighting/annun/fcp_vs:>0)||(laminar/c90/lighting/annun/fcp_ias:>0)
+sw_item:    AP ENG|OFF:laminar/c90/lighting/annun/acp_ap_disc:0
+sw_continue
+
+
+sw_checklist:TAXI
+sw_item: Power Levers|GROUND FINE:(sim/cockpit2/engine/actuators/prop_mode[0]:2)&&(sim/cockpit2/engine/actuators/prop_mode[1]:2)
+sw_item: Parking Brake|OFF:sim/flightmodel/controls/parkbrake:0
+sw_item: Brakes|CHECK:(sim/flightmodel/position/groundspeed:>0.1)&&(sim/flightmodel/controls/parkbrake:0)&&(sim/cockpit2/controls/left_brake_ratio:>0.01)&&(sim/cockpit2/controls/right_brake_ratio:>0.01)
+sw_item: Gyros|CHECK:(sim/flightmodel/misc/turnrate_noroll:<-8.0)||(sim/flightmodel/misc/turnrate_noroll:>8.0)
+
+
+sw_checklist:RUNWAY THRESHOLD
+sw_show:(sim/time/is_in_replay:0)&&(sim/flightmodel/position/groundspeed:5:1)&&(sim/cockpit2/controls/parking_brake_ratio:0:1)&&((laminar/c90/lighting/annun/fcp_clm:>0)||(laminar/c90/lighting/annun/fcp_vs:>0)||(laminar/c90/lighting/annun/fcp_ias:>0))
+sw_item: Engine Auto Ignitions|ARM:(laminar/c90/electrical/switch/autoignition_pos_L:1)&&(laminar/c90/electrical/switch/autoignition_pos_R:1)
+sw_item: Autofeather Switch|ARM:sim/cockpit/switches/auto_feather_mode:1
+sw_item: Cabin Pressurization|PLANNED ALT+500:sim/cockpit/pressure/cabin_altitude_set_m_msl:><1
+sw_item: Engine Anti-Ice|ON:(sim/cockpit/switches/anti_ice_engine_air[0]:1)&&(sim/cockpit/switches/anti_ice_engine_air[1]:1)
+sw_item: Bleed Air Valves|OPEN:(laminar/c90/pneumatics/switch/bleed_air_pos_L:1)&&(laminar/c90/pneumatics/switch/bleed_air_pos_R:1)
+sw_item: Propeller Levers|FULL FORWARD:(sim/flightmodel/engine/ENGN_prop[0]:>225)&&(sim/flightmodel/engine/ENGN_prop[1]:>225)
+sw_item: Condition Levers|AS REQ:(sim/flightmodel/engine/ENGN_mixt[0]:>0.48)&&(sim/flightmodel/engine/ENGN_mixt[1]:>0.48)
+sw_item: Elevator Trim|3° UP :sim/cockpit2/controls/elevator_trim:0.14|0.16
+sw_item: Flaps|RETRACTED:(sim/cockpit2/controls/flap_handle_deploy_ratio:0)&&(sim/cockpit2/controls/flap_ratio:0)
+sw_item: Autopilot|OFF:laminar/c90/autopilot/switch/engage_pos:0
+sw_item: Propeller Sync|OFF:sim/cockpit2/switches/prop_sync_on:0
+sw_item: Altimeter|SET:sim/cockpit2/gauges/actuators/barometer_setting_in_hg_pilot:({sim/weather/barometer_sealevel_inhg}-0.005)|({sim/weather/barometer_sealevel_inhg}+0.005)
+sw_item: Altitude Set Dial|CLEARED ALT:sim/cockpit/autopilot/altitude:><50
+sw_item: Stall Warning Heat|ON:sim/cockpit/switches/anti_ice_AOA_heat:1
+sw_item: Pitot Heats|ON:(sim/cockpit/switches/pitot_heat_on:1)&&(sim/cockpit/switches/pitot_heat_on2:1)
+sw_item: Fuel Vent Heats|ON:(laminar/c90/iceRain/switch/fuelvent_deice_pos_L:1)&&(laminar/c90/iceRain/switch/fuelvent_deice_pos_R:1)
+sw_item: Landing Lights|ON:(sim/cockpit2/switches/landing_lights_switch[0]:1)&&(sim/cockpit2/switches/landing_lights_switch[1]:1)
+sw_item: Taxi Lights|OFF:sim/cockpit/electrical/taxi_light_on:0
+sw_item: Recog Lights|ON:sim/cockpit2/switches/generic_lights_switch[2]:1
+sw_item: Strobes|ON:sim/cockpit2/switches/strobe_lights_on:1
+sw_item: Transponder|ON/ALT:sim/cockpit/radios/transponder_mode:>1
+
+
+sw_checklist:TAKEOFF
+sw_show:(sim/time/is_in_replay:0)&&(sim/cockpit2/controls/parking_brake_ratio:1:0)&&(sim/flightmodel/position/y_agl:<0.15)&&(sim/cockpit2/gauges/indicators/heading_electric_deg_mag_pilot:><40)&&(sim/cockpit/switches/auto_feather_mode:1)&&(sim/cockpit/radios/transponder_mode:>1)&&(laminar/c90/lighting/annun/fcp_alt_sel:>0.5)
+sw_itemvoid: *** Max 1315 ft-lbs / 2200 RPM ***
+sw_itemvoid: *** Max ITT 695°C ***
+sw_itemvoid: *** Rotate 97 KIAS ***
+sw_item: Power Levers|TAKEOFF PWR:sim/cockpit2/engine/actuators/throttle_ratio_all:>0.5
+sw_itemvoid: Monitor ITT and Engine Torque
+sw_item: Autofeather annunciators|LIT:(laminar/c90/lighting/annun/autofeather_L:>0)&&(laminar/c90/lighting/annun/autofeather_R:>0)
+sw_item: Ignition Annunciators|EXT.:(laminar/c90/lighting/annun/ignition_on_L:0)&&(laminar/c90/lighting/annun/ignition_on_R:0)
+sw_itemvoid: Climb at 120 KNOTS, increase to cruise climb > 1,000 feet
+
+
+sw_checklist:CLIMB
+sw_show:(sim/time/is_in_replay:0)&&(sim/flightmodel/position/y_agl:134:135)&&(sim/cockpit2/controls/flap_ratio:0)&&(sim/cockpit/switches/auto_feather_mode:1)
+sw_itemvoid:Standard Climb:
+sw_itemvoid: ***(Vx) 101 KIAS***
+sw_itemvoid: ***(Vy) 118 KIAS***
+sw_itemvoid:Cruise Climb:
+sw_itemvoid: 150 KIAS (below 10,000 ft)
+sw_itemvoid: 130 KIAS (10,000 to 20,000 ft)
+sw_itemvoid: 120 KIAS (20,000 to 25,000 ft)
+sw_itemvoid: 110 KIAS (Above 25,000ft)
+sw_item: Landing Gear Lever|UP:sim/cockpit/switches/gear_handle_status:0
+sw_item: Landing & Taxi Lights|OFF:(sim/cockpit/electrical/taxi_light_on:0)&&(sim/cockpit2/switches/landing_lights_switch[0]:0)&&(sim/cockpit2/switches/landing_lights_switch[1]:0)
+sw_item: Climb Power|SET:sim/cockpit2/engine/actuators/throttle_ratio_all:>0.5
+sw_item: Propellers|2000 RPM:(sim/cockpit2/engine/indicators/prop_speed_rpm[0]:1950|2050)&&(sim/cockpit2/engine/indicators/prop_speed_rpm[1]:1950|2050)
+sw_item: Propeller Sync|ON:sim/cockpit/switches/prop_sync_on:1
+sw_item: Engine Anti-Ice|AS REQ:(sim/cockpit/switches/anti_ice_engine_air[0]:0)&&(sim/cockpit/switches/anti_ice_engine_air[1]:0)
+sw_item: Windshield Heats|NORMAL:(laminar/c90/iceRain/switch/windshield_antiice_pos_L:!0)&&(laminar/c90/iceRain/switch/windshield_antiice_pos_R:!0)
+sw_itemvoid: Engine instruments:
+sw_item:    Torque|MAX 1315 FT-LBS:(sim/cockpit2/engine/indicators/torque_n_mtr[0]:1300|1785)&&(sim/cockpit2/engine/indicators/torque_n_mtr[1]:1300|1785)
+sw_item:    ITT|< 695°C:(sim/cockpit2/engine/indicators/ITT_deg_C[0]:<695)&&(sim/cockpit2/engine/indicators/ITT_deg_C[1]:<695)
+sw_item:    N1 Turbine|< 101.5%:(sim/cockpit2/engine/indicators/N1_percent[0]:<101.5)&&(sim/cockpit2/engine/indicators/N1_percent[1]:<101.5)
+sw_item:    Oil Temperature|<99°C:(sim/cockpit2/engine/indicators/oil_temperature_deg_C[0]:<99)&&(sim/cockpit2/engine/indicators/oil_temperature_deg_C[1]:<99)
+sw_item:    Oil Pressure|80 to 100 PSI:(sim/cockpit2/engine/indicators/oil_pressure_psi[0]:80|100)&&(sim/cockpit2/engine/indicators/oil_pressure_psi[1]:80|100)
+sw_item: Cabin Pressure|CHECK:sim/cockpit/pressure/cabin_pressure_differential_psi:>0
+sw_item: Yaw Damper|ON:sim/cockpit/switches/yaw_damper_on:1
+sw_item: Autopilot|ENGAGED:sim/cockpit/warnings/annunciators/autopilot:1
+
+
+sw_checklist:CLIMBING 10,000
+sw_show:(sim/time/is_in_replay:0)&&(sim/cockpit2/gauges/indicators/altitude_ft_pilot:10400:10500)&&(sim/cockpit2/switches/generic_lights_switch[2]:1)&&(sim/cockpit2/gauges/indicators/vvi_fpm_pilot:>100)
+sw_item: Recog Lights|OFF:sim/cockpit2/switches/generic_lights_switch[2]:0
+
+
+sw_checklist:CLIMBING FL180
+sw_show:(sim/time/is_in_replay:0)&&(sim/cockpit2/gauges/indicators/altitude_ft_pilot:18500:180)&&(sim/cockpit2/gauges/indicators/vvi_fpm_pilot:>100)&&((sim/cockpit2/gauges/actuators/barometer_setting_in_hg_pilot:<29.916)||(sim/cockpit2/gauges/actuators/barometer_setting_in_hg_pilot:>29.924))
+sw_item:Altimeter|SET 1013 or 29.92:sim/cockpit2/gauges/actuators/barometer_setting_in_hg_pilot:29.91|29.93
+
+
+sw_checklist:CRUISE CHECKLIST
+sw_show:(sim/time/is_in_replay:0)&&((sim/cockpit2/autopilot/altitude_mode:3:6)||(sim/cockpit2/autopilot/altitude_mode:4:6)||(sim/cockpit2/autopilot/altitude_mode:5:6))&&(sim/flightmodel/position/indicated_airspeed:>145)&&(laminar/c90/avionics/data/dh:<200)&&(sim/cockpit2/engine/indicators/prop_speed_rpm[0]:>1920)&&(sim/cockpit2/engine/indicators/prop_speed_rpm[1]:>1920)&&(sim/cockpit2/gauges/indicators/altitude_ft_pilot:>{sim/cockpit2/autopilot/altitude_dial_ft}-50)
+sw_item: Cruise Power|SET:sim/cockpit2/engine/actuators/throttle_ratio_all:><0.001
+sw_item: Propellers|1900 RPM:(sim/cockpit2/engine/indicators/prop_speed_rpm[0]:1850|1950)&&(sim/cockpit2/engine/indicators/prop_speed_rpm[1]:1850|1950)
+sw_item: Auto Feather|OFF:sim/cockpit/switches/auto_feather_mode:0
+sw_itemvoid: Engine instruments:
+sw_item:    Torque|MAX 1315 FT-LBS:(sim/cockpit2/engine/indicators/torque_n_mtr[0]:<1785)&&(sim/cockpit2/engine/indicators/torque_n_mtr[1]:<1785)
+sw_item:    ITT|< 695°C:(sim/cockpit2/engine/indicators/ITT_deg_C[0]:<695)&&(sim/cockpit2/engine/indicators/ITT_deg_C[1]:<695)
+sw_item:    N1 Turbine|< 101.5%:(sim/cockpit2/engine/indicators/N1_percent[0]:<101.5)&&(sim/cockpit2/engine/indicators/N1_percent[1]:<101.5)
+sw_item:    Oil Temperature|< 99°C:(sim/cockpit2/engine/indicators/oil_temperature_deg_C[0]:<99)&&(sim/cockpit2/engine/indicators/oil_temperature_deg_C[1]:<99)
+sw_item:    Oil Pressure|80 to 100 PSI:(sim/cockpit2/engine/indicators/oil_pressure_psi[0]:80|100)&&(sim/cockpit2/engine/indicators/oil_pressure_psi[1]:80|100)
+sw_item: Fuel System|CHECK
+sw_item: Cabin Pressure|CHECK:sim/cockpit/pressure/cabin_pressure_differential_psi:>0
+
+
+sw_checklist:DESCENT
+sw_show:(sim/time/is_in_replay:0)&&(sim/cockpit2/autopilot/servos_on:1)&&(sim/flightmodel/position/y_agl:>100)&&((sim/cockpit2/autopilot/altitude_mode:6:4)||(sim/cockpit2/autopilot/altitude_mode:6:5)||(sim/cockpit2/autopilot/altitude_mode:6:9)||(sim/cockpit2/autopilot/altitude_mode:6:12)||(sim/cockpit2/autopilot/altitude_mode:6:19)||(sim/cockpit2/autopilot/altitude_mode:6:20))
+sw_item: DSC, IAS or VS|SELECT:(laminar/c90/lighting/annun/fcp_dsc:>0)||(laminar/c90/lighting/annun/fcp_vs:>0)||(laminar/c90/lighting/annun/fcp_ias:>0)
+sw_item: Power Levers|REDUCE AS REQUIRED:sim/cockpit2/engine/actuators/throttle_ratio_all:><0.001
+sw_item: Pressurization|DEST FIELD+500:sim/cockpit/pressure/cabin_altitude_set_m_msl:><1
+sw_item: Cabin Rate|9-12 O'CLOCK:sim/cockpit2/pressurization/actuators/cabin_vvi_fpm:450|550
+sw_item: Altimeters|SET:sim/cockpit2/gauges/actuators/barometer_setting_in_hg_pilot:><0.005
+sw_item: Windshield Heats|AS REQUIRED:(laminar/c90/iceRain/switch/windshield_antiice_pos_L:!0)&&(laminar/c90/iceRain/switch/windshield_antiice_pos_R:!0)
+sw_item: Decision Height|SET:laminar/c90/avionics/data/dh:>50
+
+
+sw_checklist:DESCENDING 10,000
+sw_show:(sim/time/is_in_replay:0)&&(sim/cockpit2/gauges/indicators/altitude_ft_pilot:9600:9500)&&(sim/cockpit2/switches/generic_lights_switch[2]:0)&&(sim/cockpit2/gauges/indicators/vvi_fpm_pilot:<-100)
+sw_item: Recog Lights|ON:sim/cockpit2/switches/generic_lights_switch[2]:1
+
+
+sw_checklist:APPROACH
+sw_show:(sim/time/is_in_replay:0)&&(sim/flightmodel/position/y_agl:>100)&&(sim/cockpit2/radios/indicators/hsi_display_vertical_pilot:0:1)&&((sim/cockpit2/radios/actuators/HSI_source_select_pilot:2)||(laminar/c90/autopilot/indicator/glideslope_status:>0))
+sw_item: Cabin Sign FSB/NS|ON:laminar/c90/lighting/switch/no_smoke_fsb_pos:1
+sw_item: Propellor Sync|OFF:sim/cockpit/switches/prop_sync_on:0
+sw_item: Auto Feather|ARM:sim/cockpit/switches/auto_feather_mode:1
+sw_item: Auto Ignition|BOTH ARMED:(laminar/c90/electrical/switch/autoignition_pos_L:1)&&(laminar/c90/electrical/switch/autoignition_pos_R:1)
+sw_itemvoid:
+sw_itemvoid: MAX APPROACH FLAPS|184 KIAS
+sw_itemvoid: MAX GEAR|182 KIAS
+sw_itemvoid:
+sw_itemvoid: At one diamond up:
+sw_item: Propeller Levers|FULL FORWARD:sim/cockpit2/engine/actuators/prop_rotation_speed_rad_sec_all:>225
+sw_itemvoid: Torque|400 FT-LBS
+sw_item: Flaps|APPROACH:sim/cockpit2/controls/flap_ratio:>0
+sw_item: Landing Gear|DOWN:sim/cockpit2/controls/gear_handle_down:1
+
+
+sw_checklist:LANDING
+sw_show:(sim/time/is_in_replay:0)&&(sim/flightmodel/position/y_agl:>10)&&(sim/cockpit2/controls/gear_handle_down:0:1)&&(sim/flightmodel2/gear/deploy_ratio[0]:1)&&(sim/flightmodel2/gear/deploy_ratio[1]:1)&&(sim/flightmodel2/gear/deploy_ratio[2]:1)
+sw_itemvoid: ***Engine Anti-Ice ON if unpaved rwy***
+sw_itemvoid: ***End Reverse at 40 KTS***
+sw_itemvoid:
+sw_item: Landing Gear|3 GREENS:(sim/flightmodel2/gear/deploy_ratio[0]:1)&&(sim/flightmodel2/gear/deploy_ratio[1]:1)&&(sim/flightmodel2/gear/deploy_ratio[2]:1)
+sw_item: Landing, Taxi Lights|ALL ON:(sim/cockpit2/switches/landing_lights_switch[0]:1)&&(sim/cockpit2/switches/landing_lights_switch[1]:1)&&(sim/cockpit/electrical/taxi_light_on:1)
+sw_item: Yaw Damper|OFF:sim/cockpit/switches/yaw_damper_on:0
+
+
+sw_checklist:AUTOPILOT OFF
+sw_show:(sim/time/is_in_replay:0)&&(sim/cockpit2/gauges/indicators/radio_altimeter_height_ft_pilot:{laminar/c90/avionics/data/dh}+51:{laminar/c90/avionics/data/dh}+50)&&(sim/cockpit2/autopilot/servos_on:1)&&(sim/flightmodel/position/indicated_airspeed:>80)&&(sim/cockpit2/controls/flap_ratio:>0)
+sw_item: Autopilot|DISCON:sim/cockpit2/autopilot/servos_on:0
+
+
+sw_checklist:AFTER LANDING
+sw_show:(sim/time/is_in_replay:0)&&(sim/flightmodel/position/groundspeed:50:22)&&(sim/flightmodel/parts/tire_vrt_def_veh[0]:>0)&&(sim/cockpit2/controls/flap_ratio:>0.49)&&(sim/cockpit/radios/transponder_mode:>1)&&(sim/cockpit2/engine/actuators/prop_mode[0]:<3)
+sw_item: Condition Levers|LOW IDLE:(sim/cockpit2/engine/actuators/mixture_ratio[0]:<0.6)&&(sim/cockpit2/engine/actuators/mixture_ratio[1]:<0.6)
+sw_item: Auto Ignitions|BOTH OFF:(sim/cockpit2/engine/actuators/auto_ignite_on[0]:0)&&(sim/cockpit2/engine/actuators/auto_ignite_on[1]:0)
+sw_item: Engine Anti-Ice|BOTH ON:(sim/cockpit/switches/anti_ice_engine_air[0]:1)&&(sim/cockpit/switches/anti_ice_engine_air[1]:1)
+sw_item: Auto Feather|OFF:sim/cockpit/switches/auto_feather_mode:0
+sw_item: Windshield Heats|BOTH OFF:(laminar/c90/iceRain/switch/windshield_antiice_pos_L:0)&&(laminar/c90/iceRain/switch/windshield_antiice_pos_R:0)
+sw_item: Prop De-Ice|OFF:laminar/c90/iceRain/switch/prop_deice_pos:0
+sw_item: Fuel Vent Heats|BOTH OFF:(laminar/c90/iceRain/switch/fuelvent_deice_pos_L:0)&&(laminar/c90/iceRain/switch/fuelvent_deice_pos_R:0)
+sw_item: Stall Warn Heat|OFF:sim/cockpit/switches/anti_ice_AOA_heat:0
+sw_item: Pitot Heats|BOTH OFF:(sim/cockpit/switches/pitot_heat_on:0)&&(sim/cockpit/switches/pitot_heat_on2:0)
+
+
+sw_checklist:OFF RUNWAY
+sw_show:(sim/time/is_in_replay:0)&&(sim/flightmodel/parts/tire_vrt_def_veh[0]:>0)&&(sim/cockpit2/controls/flap_ratio:>0)&&(sim/cockpit2/switches/landing_lights_switch[0]:1)&&(sim/cockpit/switches/yaw_damper_on:0)&&(sim/cockpit/electrical/strobe_lights_on:1)&&(laminar/c90/lighting/annun/fcp_alt_sel:0)&&(sim/cockpit2/gauges/indicators/heading_electric_deg_mag_pilot:><30)&&(sim/cockpit/switches/pitot_heat_on2:0)
+sw_item: Taxi Lights|ON:sim/cockpit/electrical/taxi_light_on:1
+sw_item: Landing Lights|BOTH OFF:(sim/cockpit2/switches/landing_lights_switch[0]:0)&&(sim/cockpit2/switches/landing_lights_switch[1]:0)
+sw_item: Recog Lights|OFF:sim/cockpit2/switches/generic_lights_switch[2]:0
+sw_item: Strobes|OFF:sim/cockpit/electrical/strobe_lights_on:0
+sw_item: Propeller Sync|OFF:sim/cockpit/switches/prop_sync_on:0
+sw_item: FLAPS|UP:sim/cockpit2/controls/flap_ratio:0
+sw_item: Transponder|AS REQ:sim/cockpit/radios/transponder_mode:<3
+
+
+sw_checklist:SHUTDOWN
+sw_show:(sim/time/is_in_replay:0)&&(sim/flightmodel/position/groundspeed:70:1)&&(sim/cockpit2/controls/parking_brake_ratio:0:1)
+sw_item: Parking Brake|SET:sim/flightmodel/controls/parkbrake:1
+sw_item: Cabin Temperature Mode|OFF:laminar/c90/airCon/dial/cabin_temp_mode_pos:0
+sw_item: Vent Blower|AUTO:sim/cockpit2/pressurization/actuators/fan_setting:0
+sw_item: Transfer Pumps|BOTH OFF:(sim/cockpit2/fuel/transfer_pump_left:0)&&(sim/cockpit2/fuel/transfer_pump_right:0)
+sw_item: Fuel Crossfeed|OFF:sim/cockpit2/fuel/auto_crossfeed:0
+sw_item: EFIS AUXiliary Power Switch|OFF:laminar/c90/avionics/EFIS/switch_pos/aux_pwr_on:0
+sw_item: Inverter|OFF:laminar/c90/electrical/switch/inverter_pos:0
+sw_item: Auto Feather Switch|OFF:sim/cockpit/switches/auto_feather_mode:0
+sw_item: External Lights (except Beacon)|OFF:(sim/cockpit2/switches/landing_lights_switch[0]:0)&&(sim/cockpit2/switches/landing_lights_switch[1]:0)&&(sim/cockpit2/switches/taxi_light_on:0)&&(sim/cockpit2/switches/generic_lights_switch[1]:0)&&(sim/cockpit2/switches/navigation_lights_on:0)&&(sim/cockpit2/switches/generic_lights_switch[2]:0)&&(sim/cockpit2/switches/strobe_lights_on:0)&&(sim/cockpit2/switches/generic_lights_switch[3]:0)
+sw_item: Transponder|OFF:sim/cockpit/radios/transponder_mode:0
+sw_item: Overhead Panel Switches|OFF:(laminar/c90/lighting/switch/ovh_master:0)&&(laminar/c90/lighting/switch/ovh_emerg:0)
+sw_item: ITTs|BELOW 610°C FOR 1 MIN:(sim/cockpit2/engine/indicators/ITT_deg_C[0]:<610)&&(sim/cockpit2/engine/indicators/ITT_deg_C[1]:<610)&&(sim/network/misc/network_time_sec:+>15)
+sw_item: Avionics Master Switch|OFF:sim/cockpit/electrical/avionics_on:0
+sw_item: EFIS Power Switch|OFF:laminar/c90/avionics/switch_pos/EFIS_power:0
+sw_item: Rudder Boost Switch|OFF:laminar/c90/fltctrl/switch_pos/rudder_boost:0
+sw_item: Elec Elev Trim Switch|OFF:laminar/c90/fltctrl/switch_pos/elev_trim_control:0
+sw_item: Flight Director Switch|OFF:laminar/c90/avionics/EFIS/switch_pos/fd:0
+sw_item: Condition Levers|CUT-OFF:sim/cockpit2/engine/actuators/mixture_ratio_all:0
+sw_item: Propeller Levers|FEATHER:(sim/flightmodel/engine/ENGN_prop[0]:<116)&&(sim/flightmodel/engine/ENGN_prop[1]:<116)
+sw_item: Fuel Boost Pumps|OFF N1 < 10%:(sim/cockpit2/engine/indicators/N1_percent[0]:<10)&&(sim/cockpit2/engine/indicators/N1_percent[1]:<10)&&(sim/cockpit/engine/fuel_pump_on[0]:0)&&(sim/cockpit/engine/fuel_pump_on[1]:0)
+sw_item: Engine Anti-Ice|BOTH OFF:(sim/cockpit/switches/anti_ice_engine_air[0]:0)&&(sim/cockpit/switches/anti_ice_engine_air[1]:0)
+sw_item: Headset Switch|OFF:laminar/c90/avionics/switch/audio_spkr_pos_pilot:0
+sw_item: Beacon Light|OFF:(sim/cockpit/electrical/beacon_lights_on:0)
+sw_item: Battery & Generators|OFF:(sim/cockpit/electrical/battery_on:0)&&(sim/cockpit/electrical/generator_on[0]:0)&&(sim/cockpit/electrical/generator_on[1]:0)
+sw_continue:INITIAL COCKPIT CHECK
